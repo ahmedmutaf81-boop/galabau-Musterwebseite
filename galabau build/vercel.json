@@ -1,9 +1,20 @@
-﻿{
-  "outputDirectory": "public",
+{
   "rewrites": [
     {
+      "source": "/assets/(.*)",
+      "destination": "/public/assets/$1"
+    },
+    {
+      "source": "/favicon.png",
+      "destination": "/public/favicon.png"
+    },
+    {
+      "source": "/opengraph.jpg",
+      "destination": "/public/opengraph.jpg"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/public/index.html"
     }
   ]
 }
